@@ -130,6 +130,7 @@
 
 </head>
 
+
 <body>
     <header id="nbar">
         <nav class="navbar navbar-expand-md bg-body-tertiary pt-3">
@@ -199,9 +200,24 @@
                 Start hiring today
             </a>
         </div>
-        
+        <div>
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div> -->
+        </div>
+
+        <section id='trust'>
+            <div style="background-color: aquamarine;">
+
+            </div>
+        </section>
     </section>
 
+
+    
     <section class="login d-none">
         <div class="d-flex" style="flex-direction: row;">
             <div class="vidbox">
@@ -268,21 +284,27 @@
 
     <script>
         $(document).ready(function () {
-            Swal.fire({
-                            icon: 'success',
-                            title: "Welcome to Venatus",
-                            html: `<div align="left">Note :<blockquote><small><ul><li>First Page can accesed by clicking any link in Navbar.</li><li>Secound Page can accesed by Sign in or Sign up.</li></ul></small></blockquote></div>`,
-                            footer: `<span>Clone by : <a target="_blank" class="me" href="https://github.com/GreatNerve/Venatus">Dheeraj Sharma</a></span>`
-                        });
+            // Swal.fire({
+            //                 icon: 'success',
+            //                 title: "Welcome to Venatus",
+            //                 html: `<div align="left">Note :<blockquote><small><ul><li>First Page can accesed by clicking any link in Navbar.</li><li>Secound Page can accesed by Sign in or Sign up.</li></ul></small></blockquote></div>`,
+            //                 footer: `<span>Clone by : <a target="_blank" class="me" href="https://github.com/GreatNerve/Venatus">Dheeraj Sharma</a></span>`
+            //             });
             $('.sin').click(function () {
                 $('.login').removeClass('d-none');
                 $('#first').addClass('d-none');
                 $("#nbar").addClass('fixed-top');
+                // $('#navbarSupportedContent').addClass('collapsing');
+                
+                    // $('#navbarSupportedContent').removeClass('collapsing');
+                    $('#navbarSupportedContent').removeClass('show'); 
             });
             $('.lk').click(function () {
                 $('#first').removeClass('d-none');
                 $('.login').addClass('d-none');
                 $("#nbar").removeClass('fixed-top');
+                // $('#navbarSupportedContent').addClass('collapsing');
+                $('#navbarSupportedContent').removeClass('show');                  
             });
 
         });
